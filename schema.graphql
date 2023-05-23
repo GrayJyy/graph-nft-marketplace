@@ -12,9 +12,6 @@ type ItemBought @entity(immutable: true) {
   nftAddress: Bytes! # address
   tokenId: BigInt! # uint256
   price: BigInt! # uint256
-  blockNumber: BigInt!
-  blockTimestamp: BigInt!
-  transactionHash: Bytes!
 }
 
 type ItemCanceled @entity(immutable: true) {
@@ -22,9 +19,6 @@ type ItemCanceled @entity(immutable: true) {
   seller: Bytes! # address
   nftAddress: Bytes! # address
   tokenId: BigInt! # uint256
-  blockNumber: BigInt!
-  blockTimestamp: BigInt!
-  transactionHash: Bytes!
 }
 
 type ItemListed @entity(immutable: true) {
@@ -33,7 +27,4 @@ type ItemListed @entity(immutable: true) {
   nftAddress: Bytes! # address
   tokenId: BigInt! # uint256
   price: BigInt! # uint256
-  blockNumber: BigInt!
-  blockTimestamp: BigInt!
-  transactionHash: Bytes!
 }
